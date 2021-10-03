@@ -3,6 +3,7 @@
     display: none;
 }
 @media screen and (max-width:1200px) {
+    
     .header-wrap{
         align-items: initial !important;
     }
@@ -87,7 +88,6 @@
     .logo{
         flex-basis: 30%;
     }
-    
     .others-option {
         margin-top: 60px;
         flex: 0 0 0;
@@ -107,10 +107,6 @@
 }
 
 @media screen and (max-width:992px) {
-    body{
-        margin: auto;
-        text-align: center;
-    }
     .banner-content h1 {
         font-size: 55px;
     }
@@ -140,6 +136,7 @@
     }
 }
 @media screen and (max-width:768px) {
+    
     .banner-content{
         text-align: center;
     }
@@ -167,12 +164,48 @@
         padding: 14px 0;
     }
     .slick-next {
-        right: 0px;
+        right: 26px;
     }
     .slick-prev {
-        left: 0;
+        left: 20px;
+    }
+    .slick-prev::before, .slick-next::before {
+        font-size: 28px;
+    }
+    .slick-prev, .slick-next{
+        z-index: 1;
     }
 }
 @media screen and (max-width:576px) {
+    .testimonial-item {
+        padding: 30px 17px;
+    }
+    .test-icon {
+        right: 34px;
+        font-size: 43px;
+    }
+    .inner-content {
+        position: relative;
+        padding-left: 0;
+        margin-top: 85px;
+    }
+    .inner-content .icon {
+        top: -65px;
+    }
+    .choose-item {
+        padding: 15px;
+    }
+}
+@media screen and (max-width:450px) {
     
+    .subscribe-right form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .subscribe-right .input-submit{
+        position: inherit;
+        display: inline-block;
+        margin-top: 12px;
+    }
 }
