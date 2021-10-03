@@ -1,0 +1,168 @@
+/* this css foe main style, style.css */
+.menu-check, .menu-icon, .option-bar, .option-check {
+    display: none;
+}
+@media screen and (max-width:1200px) {
+    .header-wrap{
+        align-items: initial !important;
+    }
+    .address p, .address a{
+        font-size: .95rem;
+    }
+    .address{
+        justify-content: start !important;
+    }
+    .header-wrap{
+        position: relative;
+    }
+    .menu-check, .option-check{
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        margin-left: auto;
+        margin-top: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        display: inline-block;
+    }
+    .option-check{
+        right: 60px;
+    }
+    .menu-icon, .option-bar{
+        font-size: 33px;
+        position: absolute;
+        right: -1px;
+        top: 5px;
+        font-weight: 700;
+        color: var(--primary);
+        cursor: pointer;
+        pointer-events: none;
+        display: inline-block;
+    }
+    .option-bar{
+        right: 59px;
+    }
+    .menu-check:checked ~ ul, .option-check:checked ~ .second-menu{
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+    .option-check:checked ~ .second-menu{
+        width: 200px;
+    }
+    .primary-menu ul, .second-menu{
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 0;
+        margin-left: auto;
+    }
+    .primary-menu{
+        flex-basis: 70%;
+        width: 70%;
+        margin-top: 50px;
+    }
+    .primary-menu ul li{
+        display: block;
+        background-color: #fff;
+        width: 73px;
+        text-align: right;
+    }
+    .primary-menu ul li a{
+        padding: 10px 0;
+    }
+    .primary-menu ul li .dropdown-menu{
+        right: 140%;
+        top: 0px;
+        height: auto;
+    }
+    .dropdown-menu li{
+        display: block
+    }
+    .logo{
+        flex-basis: 30%;
+    }
+    
+    .others-option {
+        margin-top: 60px;
+        flex: 0 0 0;
+    }
+    .second-menu{
+        background-color: var(--white);
+        box-shadow: 1px 1px 6px #ddd;
+        position: absolute;
+        width: 200px;
+    }
+    .others-option .menu-cart {
+        margin-top: 14px;
+    }
+    .others-option .bar-menu {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .banner-content h1 {
+        font-size: 55px;
+    }
+    .sec-header {
+        width: 90%;
+    }
+    .social-menu ul{
+        justify-content: center !important;
+    }
+    .choose-item {
+        width: 100%;
+    }
+    .why-choose-section {
+        padding: 100px 50px 0;
+    }
+    .trendy-section, .organic-shop-section, .why-choose-section,
+    .featured-section, .testimonial-section, .best-seller-section, .discount-section,
+    .most-viewed-section, .latest-blog-section,
+    .newsletter-section{
+        padding: 45px 0;
+    }
+    .up-footer-section{
+        padding: 30px 0;
+    }
+    .detox-water-shape{
+        display: none;
+    }
+}
+@media screen and (max-width:768px) {
+    .banner-content{
+        text-align: center;
+    }
+    .banner-section {
+        padding: 130px 0;
+    }
+    .banner-content h1 {
+        font-size: 45px;
+    }
+    .why-choose-section {
+        padding: 40px 20px;
+    }
+    .terms ul {
+        justify-content: center !important;
+        margin-top: 20px;
+        padding-left: 0;
+    }
+    footer p{
+        text-align: center;
+    }
+    .logo img{
+        max-width: 80px;
+    }
+    .logo{
+        padding: 14px 0;
+    }
+}
+@media screen and (max-width:576px) {
+    
+}
