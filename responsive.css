@@ -166,6 +166,12 @@
     .logo{
         padding: 14px 0;
     }
+    .slick-next {
+        right: 0px;
+    }
+    .slick-prev {
+        left: 0;
+    }
 }
 @media screen and (max-width:576px) {
     
