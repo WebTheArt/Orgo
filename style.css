@@ -618,7 +618,7 @@ select:active .language::before{
 .inner-content .icon {
     position: absolute;
     left: 0;
-    right: 0;
+    top: 0;
 }
 .inner-content .icon i{
     display: inline-block;
@@ -702,6 +702,7 @@ select:active .language::before{
     background-size: cover;
     background-attachment: fixed;
     padding: 100px 0;
+    background-position: center;
 }
 .discount-video{
     text-align: center;
